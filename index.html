@@ -1,74 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HVT Navigation</title>
-
-    <!-- GOOGLE FONT -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools</title>
 
     <style>
         body {
             margin: 0;
             padding: 0;
-            background: #0a0a0a; /* Dark theme */
-            font-family: "Poppins", sans-serif;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            background: url("https://i.ibb.co/3Fh9cHh/stars-bg.jpg") center/cover no-repeat #000;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            flex-direction: column;
             color: white;
         }
 
-        .container {
-            text-align: center;
-        }
-
-        .title {
-            font-size: 38px;
-            font-weight: 600;
-            margin-bottom: 40px;
-            color: #ffffff;
-        }
-
-        .choices {
-            display: flex;
-            flex-direction: column;
-            gap: 18px;
+        h1 {
+            font-size: 40px;
+            margin-bottom: 30px;
         }
 
         .choice {
-            padding: 15px 25px;
-            font-size: 20px;
-            text-decoration: none;
-            font-weight: 500;
-            background: #240033; /* Midnight Purple */
-            border: 2px solid black;
-            border-radius: 12px;
+            padding: 15px 40px;
+            background: #2a003e;
+            border: 3px solid black;
             color: white;
-            transition: 0.25s ease;
+            font-size: 20px;
+            border-radius: 12px;
+            margin: 10px;
+            cursor: pointer;
+            transition: .2s;
         }
 
         .choice:hover {
             transform: scale(1.07);
-            background: #33004d;
+            background: #3d0063;
         }
+
+        /* Discord button bottom-right */
+        .discord-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 12px 25px;
+            background: #5865F2;
+            color: white;
+            border-radius: 12px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .discord-btn:hover {
+            transform: scale(1.08);
+        }
+
+        /* Bypasser bottom-left */
+        .bypasser-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            padding: 12px 25px;
+            background: #2a003e;
+            border: 3px solid black;
+            color: white;
+            border-radius: 12px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .bypasser-btn:hover {
+            background: #3d0063;
+            transform: scale(1.08);
+        }
+
     </style>
 </head>
-
 <body>
-    <div class="container">
-        <h1 class="title">HVT Navigation Panel</h1>
 
-        <div class="choices">
+    <h1>Tools</h1>
 
-            <!-- Replace YOUR_LINK_HERE with your safe real links -->
-            <a href="https://www.logged.tg/auth/officialhvt" class="choice">Injuries</a>
-            <a href="https://immortal.rs/?code=MDgzNDI0NjEyMjcyMjM5NTI4N18wNjA0MjI1MTQ4MjMxMzY0MTE2Xzg4MzIwNTUxOTk0NDExMTQzODI=" class="choice">Immortal</a>
-            <a href="https://discord.gg/xWnGbe6hn" class="choice">Discord Server</a>
+    <button class="choice" onclick="window.location.href='https://immortal.rs/dashboard'">
+        Immortal
+    </button>
 
-        </div>
-    </div>
+    <button class="choice" onclick="window.location.href='https://www.logged.tg/auth/officialhvt'">
+        Injuries
+    </button>
+
+    <button class="choice" onclick="window.location.href='https://is.gd/WoOp6L'">
+        Bypasser for Cookies
+    </button>
+
+    <!-- Bottom Right Discord Button -->
+    <button class="discord-btn" onclick="window.location.href='https://discord.gg/xWnGbe6hn'">
+        Join Discord
+    </button>
+
+    <!-- Bottom Left Bypasser Shortcut -->
+    <button class="bypasser-btn" onclick="window.location.href='https://is.gd/WoOp6L'">
+        Bypasser for Cookies
+    </button>
+
 </body>
 </html>
